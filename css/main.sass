@@ -11,7 +11,7 @@ body
     font-family:'Bison'
 
 header
-    border-bottom: solid $line-width $black
+    border-bottom: $line-width solid $black
     font-size: $font
     display: flex
     justify-content: space-between
@@ -19,10 +19,40 @@ header
 
 .container
     display: flex
-    height: $full
+    height: 91vh
 
 .left
     width: $mid
+    text-align: center
+    background: $pink
+    border-right: $line-width solid $black
+    .stars
+        position: absolute
+        font-size: 23px
+    .name
+        font-size: $size-name
+    .rotate
+        position: relative
+        padding: 100px 0 130px 0
+        .shadow
+            border-radius: 9999px
+            width: 403px
+            height: 403px
+            background: $black
+            position: absolute
+            top: 22%
+            left: 24%
+            z-index: 1
+        img
+            z-index: 2
+            position: relative
+    //animation: bounce 1s linear infinite
+
+/*@keyframe bounce
+    0%
+        rotate(0%)
+    100%
+        rotate(100%)*/
 
 .right
     width: $mid
