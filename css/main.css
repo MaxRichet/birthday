@@ -88,4 +88,17 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.left {
+  width: 50vw;
+}
+
+.right {
+  width: 50vw;
 }/*# sourceMappingURL=main.css.map */
